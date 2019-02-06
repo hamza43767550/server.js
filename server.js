@@ -54,6 +54,16 @@ res.render('about.hbs',{
   welcomeMessage:'we are on About page'
 });
 });
+
+
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageTitle:'projects'
+  });
+
+});
+
+
 app.get('/bad',(req,res)=>{
 res.send({errorMessage:'WE got an Error'});
 });
